@@ -79,7 +79,37 @@ button img {
   width: 200px;
   height: 200px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 888px) {
+  .sidebar_bg {
+    width: 100px;
+    height: 100px;
+  }
+  #logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  .sidebar {
+    width: 25%;
+  }
+  .sidebarListItem {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+    text-align: center;
+    /* color: #fff; */
+    font-size: 8px;
+    text-decoration: none;
+  }
+  button {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 741px) {
   .sidebar {
     display: none;
   }

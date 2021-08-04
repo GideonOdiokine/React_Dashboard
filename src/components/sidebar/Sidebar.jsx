@@ -14,7 +14,7 @@ function Sidebar() {
         <div className="sidebarMenu">
           <div className="sidebar__nav">
             <div className="sidebarTitle">
-              <img src={Logo} alt="logo" />{" "}
+              <img src={Logo} alt="logo" id="logo" />{" "}
             </div>
             <ul className="sidebarList">
               <NavLink exact activeClassName="active-link" to="/">
