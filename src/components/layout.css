@@ -1,0 +1,13 @@
+.layout {
+  width: 80%;
+  background: hsl(0, 8%, 95%);
+}
+
+@media (max-width: 742px) {
+  .layout {
+    width: 100%;
+  }
+  .rider_top button {
+    width: 100%;
+  }
+}

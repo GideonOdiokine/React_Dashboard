@@ -3,6 +3,7 @@ import "./table.css";
 import Pagination from "../Pagination/Pagination";
 import { useState } from "react";
 import pic from "../../img/bb.png";
+import TableHeadTitle from "./TableHeadTitle";
 
 function Table({ th, td, btnTxt, Icons }) {
   const [noElem, setNoElem] = useState(3);
@@ -15,17 +16,10 @@ function Table({ th, td, btnTxt, Icons }) {
   const slice = td.slice(0, noElem);
   return (
     <div className="table__container">
-      <h2
-        style={{
-          padding: "18px",
-          fontFamily: "sans-serif",
-          color: "gray",
-          fontWeight: "100",
-          fontSize: "15px",
-        }}
-      >
-        LASTEST ORDERS
+      <h2>
+        <TableHeadTitle />
       </h2>
+
       <div className="table">
         <table>
           <thead>
@@ -99,7 +93,7 @@ function Table({ th, td, btnTxt, Icons }) {
                           fill="#50d000"
                         />
                       </svg>
-                    ))}{" "}
+                    ))}
                   {d.statusD}
                 </td>
                 <td>
@@ -166,7 +160,6 @@ function Table({ th, td, btnTxt, Icons }) {
                       />
                     </svg>
                   )}
-                  {"  "}
                   {d.status}
                 </td>
               </tr>

@@ -1,6 +1,5 @@
 import React from "react";
 import Table from "../../components/Table/Table";
-import Topbar from "../../components/Topbar";
 import groupBtn from "../../img/group.png";
 import searchIcon from "../../img/path.png";
 import { Link } from "react-router-dom";
@@ -62,8 +61,7 @@ function Rider() {
     },
   ];
   return (
-    <div className="container home">
-      <Topbar />
+    <div className="home">
       <div className="orderWrapper">
         <div className="orderTop rider rider_top">
           <h2 className="orderTop__Title">Dispatch Riders</h2>
@@ -76,15 +74,16 @@ function Rider() {
                 placeholder="Search email address"
               />
             </div>
-           <Link to='/create' > <button>
-              <img src={groupBtn} alt="btn" />
-              CREATE ACCOUNT
-            </button></Link>
+            <Link to="/create">
+              <button>
+                <img src={groupBtn} alt="btn" />
+                CREATE ACCOUNT
+              </button>
+            </Link>
           </div>
         </div>
-        {/* <Table th={th} td={td} Icons={Icons} /> */}
+        <Table th={th} td={td} Icons={Icons} />
       </div>
-      <Table th={th} td={td} Icons={Icons} />
     </div>
   );
 }

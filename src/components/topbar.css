@@ -6,8 +6,8 @@
   top: 0;
   z-index: 999;
   box-shadow: 0px 0px 15px -11px rgba(15, 14, 14, 0.75);
+  overflow-y: hidden;
 }
-
 .topRight {
   display: flex;
   align-items: center;
@@ -31,4 +31,25 @@
   background-size: cover;
   margin-left: 20px;
   cursor: pointer;
+}
+.burger {
+  cursor: pointer;
+  display: none;
+}
+.burger div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+@media (max-width: 641px) {
+  .burger {
+    display: block;
+  }
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }

@@ -1,0 +1,40 @@
+.nav {
+  background: #d71e3c;
+  color: #ffffff;
+  cursor: pointer;
+  display: none;
+  font-size: 2rem;
+  height: 100vh;
+  left: -20rem;
+  padding: 6rem 2rem 2rem 2rem;
+  position: fixed;
+  top: 0;
+  transition: 0.5s;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+}
+.nav.expanded {
+  left: 0;
+}
+.nav ul {
+  list-style: none;
+  margin: auto 0;
+  padding: 0;
+  width: 100%;
+}
+
+.nav li {
+  padding-bottom: 50px;
+}
+.logout__btn {
+  position: absolute;
+  bottom: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 641px) {
+  .nav {
+    display: flex;
+  }
+}

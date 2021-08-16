@@ -1,6 +1,5 @@
 import React from "react";
 import Table from "../../components/Table/Table";
-import Topbar from "../../components/Topbar";
 
 import "./order.css";
 
@@ -45,8 +44,8 @@ function Order() {
     },
   ];
   return (
-    <div className="home container">
-      <Topbar />
+    <div className="home ">
+      {/* <Topbar /> */}
       <div className="orderWrapper">
         <div className="orderTop">
           <h2 className="orderTop__Title">ALL ORDERS</h2>
@@ -58,7 +57,7 @@ function Order() {
             <button>Filter</button>
           </div>
         </div>
-        <Table th={th} td={td} Icons={Icons} />
+        <Table th={th} td={td} Icons={Icons} title="RIDERS" />
       </div>
     </div>
   );

@@ -6,7 +6,8 @@ import HomeIcon from "../../img/home.png";
 import user from "../../img/user.png";
 import LogoutBtn from "../../img/logout.png";
 import bg from "../../img/bg.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+
 function Sidebar() {
   return (
     <div className="sidebar">
@@ -14,10 +15,10 @@ function Sidebar() {
         <div className="sidebarMenu">
           <div className="sidebar__nav">
             <div className="sidebarTitle">
-              <img src={Logo} alt="logo" id="logo" />{" "}
+              <img src={Logo} alt="logo" id="logo" />
             </div>
             <ul className="sidebarList">
-              <NavLink exact activeClassName="active-link" to="/">
+              <NavLink exact activeClassName="active-link" to="/dashboard">
                 <li className="sidebarListItem ">
                   <img src={HomeIcon} alt="order-img" className="sidebarIcon" />
                   Home
@@ -37,10 +38,12 @@ function Sidebar() {
               </NavLink>
             </ul>
             <img src={bg} alt="sidebar" className="sidebar_bg" />
-            <button>
-              <img src={LogoutBtn} alt="btn" />
-              Logout
-            </button>
+            <Link to="/">
+              <button>
+                <img src={LogoutBtn} alt="btn" />
+                Logout
+              </button>
+            </Link>
           </div>
         </div>
       </div>
